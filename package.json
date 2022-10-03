@@ -10,10 +10,13 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "precommit": "turbo run precommit",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
+    "husky": "^8.0.1",
     "prettier": "latest",
     "turbo": "latest"
   },

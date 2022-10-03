@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint --ext .ts,.tsx .",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "next": "12.3.0",
@@ -16,12 +17,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint": "7.32.0",
-    "eslint-config-custom": "*",
-    "next-transpile-modules": "9.0.0",
-    "tsconfig": "*",
     "@types/node": "^17.0.12",
     "@types/react": "18.0.17",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "*",
+    "lint-staged": "^13.0.3",
+    "next-transpile-modules": "9.0.0",
+    "tsconfig": "*",
     "typescript": "^4.5.3"
   }
 }

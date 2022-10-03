@@ -8,6 +8,9 @@
     "lint": {
       "outputs": []
     },
+    "precommit": {
+      "outputs": []
+    },
     "dev": {
       "cache": false
     }
